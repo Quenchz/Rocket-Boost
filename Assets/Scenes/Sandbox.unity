@@ -746,11 +746,23 @@ PrefabInstance:
       value: 23aed794-164a-4b34-bb90-8f9b10c23461
       objectReference: {fileID: 0}
     - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 0cab4b16-0041-48e2-9760-8330d13e7220
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[0].m_Path
       value: <Keyboard>/space
       objectReference: {fileID: 0}
     - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Keyboard>/h
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Space Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Action
       value: Space Button
       objectReference: {fileID: 0}
     - target: {fileID: 8510394293330868204, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
