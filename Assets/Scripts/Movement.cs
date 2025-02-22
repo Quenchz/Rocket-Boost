@@ -7,13 +7,14 @@ public class Movement : MonoBehaviour
     [SerializeField] InputAction rotation;
     [SerializeField] float upspeed = 500f;
     [SerializeField] float rotationspeed = 100f;
-
-
-
+    
+    AudioSource audioSource;
     Rigidbody rb;
+
     void Start()
     {
     rb = GetComponent<Rigidbody>();
+    audioSource = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -33,7 +34,13 @@ public class Movement : MonoBehaviour
         if (SpaceButton.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * upspeed * Time.fixedDeltaTime);
-            Debug.Log("Basildi");
+
+            if(!audioSource.isPlaying){
+                audioSource.Play();
+            }
+            
+        }else{
+            audioSource.Stop();
         }
     }
 
@@ -43,6 +50,7 @@ public class Movement : MonoBehaviour
         if(Rotasyonumuz < 0)
         {
             ApplyRotation(rotationspeed);
+            
         }
         else if(Rotasyonumuz > 0)
         {
@@ -56,6 +64,7 @@ public class Movement : MonoBehaviour
         transform.Rotate(Vector3.forward * RotationThisFrame * Time.fixedDeltaTime);
         rb.freezeRotation = false;
     }
+
 
 }
 
