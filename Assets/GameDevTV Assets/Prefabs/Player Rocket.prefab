@@ -47,22 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82456f3be0f427468519b5d866cfe54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust:
-    m_Name: Thrust
+  SpaceButton:
+    m_Name: Space Button
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: a3d26886-3481-4b8a-b546-81adf3c3a2f8
+    m_Id: 3a4a2f48-6774-4c9d-acc7-2cc0827b01d7
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 4bf358ef-cf32-4dd9-b192-37099ee9f3f5
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Thrust
-      m_Flags: 0
+    m_SingletonActionBindings: []
     m_Flags: 0
   rotation:
     m_Name: Rotation
@@ -98,6 +90,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   upspeed: 500
+  rotationspeed: 2
 --- !u!54 &3239594037757271148
 Rigidbody:
   m_ObjectHideFlags: 0
