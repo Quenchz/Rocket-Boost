@@ -1111,6 +1111,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: f897a1ceae23bf349a701a9a3c2cf6ff, type: 3}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 2104500000}
@@ -1150,6 +1154,14 @@ PrefabInstance:
       propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Action
       value: Space Button
       objectReference: {fileID: 0}
+    - target: {fileID: 6142974969248842394, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: crashsound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1373b9feb6d1d144eb02667d1c9ce156, type: 3}
+    - target: {fileID: 6142974969248842394, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: successound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b37545d634019945be773b8367eaf91, type: 3}
     - target: {fileID: 8414788756063223886, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: m_Size.x
       value: 1.357583
