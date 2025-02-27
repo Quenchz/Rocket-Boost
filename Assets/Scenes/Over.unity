@@ -1043,6 +1043,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 191e1445-c102-4fd2-9304-36d522aca8e8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/dpad/up
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Space Button
+      objectReference: {fileID: 0}
     - target: {fileID: 8510394293330868204, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: m_Name
       value: Player Rocket
