@@ -233,7 +233,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.039877, y: 2.3409405, z: -10}
+  m_LocalPosition: {x: -10.039969, y: 2.2044172, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -567,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 422618753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.039877, y: 2.3409405, z: -10}
+  m_LocalPosition: {x: -10.039969, y: 2.2044172, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -771,7 +771,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -5, z: 0}
-  m_LocalScale: {x: 35, y: 10, z: 22}
+  m_LocalScale: {x: 55.665962, y: 10, z: 22}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -820,114 +820,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -65.35, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &916279450
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 916279454}
-  - component: {fileID: 916279453}
-  - component: {fileID: 916279452}
-  - component: {fileID: 916279451}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: fuel
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!135 &916279451
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916279450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &916279452
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916279450}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &916279453
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916279450}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &916279454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916279450}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1009,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3622690764267905957, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.39
+      value: 1.253477
       objectReference: {fileID: 0}
     - target: {fileID: 3622690764267905957, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1043,21 +935,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
-      propertyPath: SpaceButton.m_SingletonActionBindings.Array.size
-      value: 1
+    - target: {fileID: 4873059374496670355, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
+      propertyPath: m_Volume
+      value: 0.113
       objectReference: {fileID: 0}
     - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
-      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Id
-      value: 191e1445-c102-4fd2-9304-36d522aca8e8
+      propertyPath: upspeed
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
-      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Path
-      value: <Gamepad>/dpad/up
-      objectReference: {fileID: 0}
-    - target: {fileID: 5046801382051551268, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
-      propertyPath: SpaceButton.m_SingletonActionBindings.Array.data[1].m_Action
-      value: Space Button
+      propertyPath: rotationspeed
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8510394293330868204, guid: b0bca5f98bad0404889ebabd3f658115, type: 3}
       propertyPath: m_Name
@@ -1078,7 +966,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 673280298}
   - {fileID: 607381703}
-  - {fileID: 7401811543345613473}
   - {fileID: 358933309}
   - {fileID: 419081448473480421}
-  - {fileID: 916279454}
+  - {fileID: 7401811543345613473}

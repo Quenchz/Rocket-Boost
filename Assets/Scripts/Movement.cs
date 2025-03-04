@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,11 @@ public class Movement : MonoBehaviour
     [SerializeField] float upspeed = 500f;
     [SerializeField] float rotationspeed = 100f;
     [SerializeField] AudioClip mainEngine;
-    
+    [SerializeField] ParticleSystem MainBooster;
+    [SerializeField] ParticleSystem LeftBooster;
+    [SerializeField] ParticleSystem RightBooster;
+
+
     AudioSource audioSource;
     Rigidbody rb;
 
@@ -34,14 +39,27 @@ public class Movement : MonoBehaviour
     {
         if (SpaceButton.IsPressed())
         {
-            rb.AddRelativeForce(Vector3.up * upspeed * Time.fixedDeltaTime);
-
-            if(!audioSource.isPlaying){
-                audioSource.PlayOneShot(mainEngine);
-            }
-            
-        }else{
+            StartThrusting();
+        }
+        else
+        {
             audioSource.Stop();
+            MainBooster.Stop();
+        }
+    }
+
+    void StartThrusting()
+    {
+        rb.AddRelativeForce(Vector3.up * upspeed * Time.fixedDeltaTime);
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+        }
+
+        if (!MainBooster.isPlaying)
+        {
+            MainBooster.Play();
         }
     }
 
@@ -51,11 +69,21 @@ public class Movement : MonoBehaviour
         if(Rotasyonumuz < 0)
         {
             ApplyRotation(rotationspeed);
+            if(!LeftBooster.isPlaying){
+                LeftBooster.Play();
+            }
+
             
         }
         else if(Rotasyonumuz > 0)
         {
             ApplyRotation(-rotationspeed);
+            if(!RightBooster.isPlaying){
+                RightBooster.Play();
+            }
+        }else{
+            RightBooster.Stop();
+            LeftBooster.Stop();
         }
     }
 
